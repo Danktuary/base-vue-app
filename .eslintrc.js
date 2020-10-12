@@ -1,6 +1,6 @@
 module.exports = {
 	root: true,
-	'extends': 'sora/vue',
+	'extends': 'sora/vue-3',
 	env: {
 		browser: true,
 		node: true,
