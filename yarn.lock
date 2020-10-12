@@ -3549,6 +3549,11 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
+eslint-config-sora@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-sora/-/eslint-config-sora-3.0.2.tgz#6052d1d29758f207d5a580ee83bf7dc4c9c4808f"
+  integrity sha512-UStn6EoxJFkyBLR30kF2rQPiKZgokm1e3LJMWKU0YLFRARv5coTI4SLqXJBt8zq9XxzIx2v3r7TEsSCMZAcF3g==
+
 eslint-loader@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-2.2.1.tgz#28b9c12da54057af0845e2a6112701a2f6bf8337"
