@@ -21,6 +21,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "examples" */ '../views/examples/Index.vue'),
 		children: [
 			{
+				path: 'administrative/user-management',
+				name: 'user-management',
+				component: () => import(/* webpackChunkName: "examples-administrative" */ '../views/examples/administrative/users/UserManagement.vue'),
+			},
+			{
 				path: 'profiles/user',
 				name: 'profiles-user',
 				component: () => import(/* webpackChunkName: "examples-profiles" */ '../views/examples/profiles/UserProfile.vue'),
