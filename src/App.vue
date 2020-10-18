@@ -1,7 +1,30 @@
 <template>
-	<div id="nav">
-		<router-link to="/">Home</router-link> |
-		<router-link to="/about">About</router-link>
+	<div id="app-container">
+		<hero-nav />
+		<main id="main-container">
+			<router-view />
+		</main>
 	</div>
-	<router-view />
 </template>
+
+<script>
+import HeroNav from './layouts/HeroNav.vue'
+
+export default {
+	components: {
+		HeroNav,
+	},
+}
+</script>
+
+<style lang="stylus">
+html, body
+	margin: 0
+	padding: 0
+
+#app
+	font-family: Arial, Helvetica, sans-serif
+
+#main-container
+	width: 80%
+</style>
