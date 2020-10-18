@@ -7,6 +7,9 @@
 			<li class="nav-item">
 				<router-link :to="{ name: 'about' }">About</router-link>
 			</li>
+			<li class="nav-item">
+				<router-link :to="{ name: 'examples' }">Examples</router-link>
+			</li>
 		</ul>
 	</div>
 </template>
