@@ -19,6 +19,8 @@ export default {
 
 <style lang="stylus">
 html, body
+	color: #fff
+	background-color: #202020
 	margin: 0
 	padding: 0
 
