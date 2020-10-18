@@ -28,5 +28,6 @@ html, body
 	font-family: Arial, Helvetica, sans-serif
 
 #main-container
-	width: 80%
+	width: 90%
+	margin: 0 auto
 </style>
