@@ -18,7 +18,18 @@
 					<button type="submit">Submit</button>
 				</div>
 			</form>
-			<form @submit.prevent="clearUsers">
+			<br />
+			<form class="user-delete" @submit.prevent="deleteUser(userDeleteID)">
+				<div>
+					<label for="user-deletion-id">ID: </label>
+					<input id="user-deletion-id" v-model.number="userDeleteID" type="number" />
+				</div>
+				<div>
+					<button type="submit">Delete user</button>
+				</div>
+			</form>
+			<br />
+			<form class="users-clear" @submit.prevent="clearUsers">
 				<div>
 					<button type="submit">Clear users</button>
 				</div>
@@ -41,22 +52,25 @@ import { mapMutations, useStore } from 'vuex'
 export default {
 	name: 'UserManagement',
 	setup() {
-		const store = useStore()
-		const { users } = store.state
+		const { users } = useStore().state
 		const userForm = reactive({
 			id: users.length ? users[users.length - 1].id + 1 : 1,
 			username: '',
 			discriminator: '',
 		})
 
+		const userDeleteID = ref(0)
+
 		watchEffect(() => userForm.id = users.length ? users[users.length - 1].id + 1 : 1)
 
 		return {
 			users,
 			userForm,
+			userDeleteID,
 			...mapMutations({
 				addUser: 'users/add',
 				clearUsers: 'users/clear',
+				deleteUser: 'users/delete',
 			}),
 		}
 	},

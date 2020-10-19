@@ -14,9 +14,9 @@ export default {
 		},
 		delete(state, id) {
 			const userIndex = state.findIndex(user => user.id === id)
-			if (!userIndex) return
+			if (userIndex < 0) return
 
-			state.users.splice(userIndex, 1)
+			state.splice(userIndex, 1)
 			storage.set('users', JSON.stringify(state))
 		},
 	},
