@@ -17,12 +17,4 @@ export default {
 }
 </script>
 
-<style lang="sass">
-
-#app
-	font-family: Arial, Helvetica, sans-serif
-
-#main-container
-	width: 90%
-	margin: 0 auto
-</style>
+<style src="./styles/index.sass" lang="sass"></style>
