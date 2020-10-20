@@ -3,7 +3,7 @@
 		<hero-nav />
 		<section class="section">
 			<div class="container">
-				<main class="box has-background-dark has-text-light has-text-link-light">
+				<main class="box">
 					<router-view />
 				</main>
 			</div>
