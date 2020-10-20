@@ -77,7 +77,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .user-management
 	.user-management-tools
 		.user-create
