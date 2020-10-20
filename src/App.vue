@@ -1,9 +1,13 @@
 <template>
 	<div id="app-container">
 		<hero-nav />
-		<main id="main-container">
-			<router-view />
-		</main>
+		<section class="section">
+			<div class="container">
+				<main class="box has-background-dark has-text-light has-text-link-light">
+					<router-view />
+				</main>
+			</div>
+		</section>
 	</div>
 </template>
 

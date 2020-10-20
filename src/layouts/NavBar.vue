@@ -1,36 +1,19 @@
 <template>
-	<div id="nav-bar">
-		<ul class="nav-items">
-			<li class="nav-item">
-				<router-link :to="{ name: 'index' }">Home</router-link>
-			</li>
-			<li class="nav-item">
-				<router-link :to="{ name: 'about' }">About</router-link>
-			</li>
-			<li class="nav-item">
-				<router-link :to="{ name: 'examples' }">Examples</router-link>
-			</li>
-		</ul>
-	</div>
+	<nav class="tabs is-boxed">
+		<div class="container">
+			<ul>
+				<!-- https://next.router.vuejs.org/api/#router-link-s-v-slot -->
+				<router-link v-slot="{ href, isActive, navigate }" :to="{ name: 'index' }" custom>
+					<li :class="{ 'is-active': isActive }">
+						<a :href="href" @click="navigate">Home</a>
+					</li>
+				</router-link>
+				<router-link v-slot="{ href, isActive, navigate }" :to="{ name: 'examples' }" custom>
+					<li :class="{ 'is-active': isActive }">
+						<a :href="href" @click="navigate">Examples</a>
+					</li>
+				</router-link>
+			</ul>
+		</div>
+	</nav>
 </template>
-
-<style lang="stylus">
-#nav-bar
-	background-color: #41b883
-	display: flex
-	width: 100%
-
-	.nav-items
-		display: flex
-		list-style: none
-		margin: 0
-		padding: 0
-
-		.nav-item
-			display: inline-flex
-			margin: 0 0.25em
-
-			a
-				background-color: rgba(0, 0, 0, 0.25)
-				padding: 0.5em 1em
-</style>
