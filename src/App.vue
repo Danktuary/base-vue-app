@@ -22,3 +22,7 @@ export default {
 </script>
 
 <style src="./styles/index.sass" lang="sass"></style>
+<style lang="sass">
+#app-container main.box
+	border: 1px solid rgba(#000, 0.1)
+</style>
