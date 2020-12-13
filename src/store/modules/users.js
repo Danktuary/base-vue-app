@@ -1,4 +1,4 @@
-import storage from '@/storage.js'
+import storage from '@/core/storage.js'
 
 export default {
 	namespaced: true,
